@@ -24,3 +24,10 @@ Some will have logic that is triggered just by requiring the file.
 ```js
 require('utils/process/handle-exceptions');
 ```
+
+### Tests
+
+```sh
+npm test
+npm run lint
+```
