@@ -24,12 +24,12 @@ test('should sort array of strings case insensitive', t => {
 });
 
 test('should sort objects, if given a key', t => {
-  const bob = {
-    fname: 'Bob',
-    born: 'USA'
-  };
   const frank = {
     fname: 'frank',
+    born: 'USA'
+  };
+  const bob = {
+    fname: 'Bob',
     born: 'Thailand'
   };
   const susan = {
@@ -40,7 +40,7 @@ test('should sort objects, if given a key', t => {
   const example = [bob, frank, susan];
   sortInsensitive(example, 'fname');
 
-  if (example[0] === frank && example[1] === susan && example[2] === bob) {
+  if (example[0] === bob && example[1] === frank && example[2] === susan) {
     return t.pass();
   }
   t.fail();
