@@ -7,7 +7,7 @@ These are general-use & common utilities used in several Conjure-related project
 ### Install
 
 ```sh
-npm install utils@ConjureLabs/utils
+npm install --save utils@ConjureLabs/utils
 ```
 
 ### Usage
