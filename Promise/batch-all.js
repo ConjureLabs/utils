@@ -14,27 +14,27 @@
 */
 module.exports = async (batchLimit, baseData, generatePromise) => {
   if (isNaN(batchLimit) || batchLimit < 1) {
-    throw new Error('Invalid batch limit set');
+    throw new Error('Invalid batch limit set')
   }
 
-  const data = baseData.slice();
-  const result = [];
+  const data = baseData.slice()
+  const result = []
 
   while (data.length) {
-    const currentRun = [];
+    const currentRun = []
 
     for (let i = 0; i < Math.min(batchLimit, data.length); i++) {
       currentRun.push(
         generatePromise(
           data.shift()
         )
-      );
+      )
     }
 
     for (let i = 0; i < currentRun.length; i++) {
-      result.push( await currentRun[i] );
+      result.push( await currentRun[i] )
     }
   }
 
-  return result;
-};
+  return result
+}
