@@ -7,7 +7,13 @@ These are general-use & common utilities used in several Conjure-related project
 ### Install
 
 ```sh
-npm install --save utils@ConjureLabs/utils
+npm install --save @conjurelabs/utils
+```
+
+or
+
+```sh
+yarn add @conjurelabs/utils
 ```
 
 ### Usage
@@ -15,14 +21,14 @@ npm install --save utils@ConjureLabs/utils
 Any file seen in here can be referred to directly.
 
 ```js
-const sortInsensitive = require('utils/Array/sort-insensitive');
-sortInsensitive(myArr);
+const sortInsensitive = require('@conjurelabs/utils/Array/sort-insensitive')
+sortInsensitive(myArr)
 ```
 
 Some will have logic that is triggered just by requiring the file.
 
 ```js
-require('utils/process/handle-exceptions');
+require('@conjurelabs/utils/process/handle-exceptions')
 ```
 
 ### Notes
