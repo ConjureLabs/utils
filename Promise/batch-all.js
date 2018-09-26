@@ -7,7 +7,7 @@
   `baseData` is an array of data. This array will be iterated over and each cell
   will be passed to `generatePromise`
 
-  `generatePromise` must be a function that return promises (not the promises directly)
+  `generatePromise` must be a function that returns promises (not the promises directly)
   this helps avoid promises firing immediately all in parallel (since that is what they do)
 
   this function returns the result of each promise resolve, in same order as inbound `baseData`
