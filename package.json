@@ -1,6 +1,6 @@
 {
   "name": "@conjurelabs/utils",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "general-use & common utilities used in several Conjure-related projects",
   "scripts": {
     "lint": "bash ./bash/lint.sh",
