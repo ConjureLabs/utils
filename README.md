@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/ConjureLabs/utils/tree/master.svg?style=svg)](https://circleci.com/gh/ConjureLabs/utils/tree/master)
+
 <p align="center">
   <kbd>u t i l s</kbd>
 </p>
