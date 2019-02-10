@@ -3,7 +3,7 @@
 // where all values have been padded
 // to equal the longest's,
 // plus extra amount as specified
-function equalWidths(strings, extraPadding = 0) {
+module.exports = function equalWidths(strings, extraPadding = 0) {
   const longestLen = strings.reduce((longestLen, str) => {
     if (str.length > longestLen) {
       return str.length
